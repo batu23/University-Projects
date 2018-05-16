@@ -111,7 +111,7 @@ if platform.system() == 'Windows': # this is necessary for unix compability
     
 # create instance using boto3 with key wdf.pem and security group wdf
 response = ec2.create_instances(
-            ImageId="ami-a9d276c9", #ami-a9d276c9 #ami-5ec1673e
+            ImageId="YOUR_AMI_ID", 
             MinCount=1,
             MaxCount=1,
             KeyName="wdf",
